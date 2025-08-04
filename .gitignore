@@ -1,0 +1,5 @@
+*.pyc
+src/blueskyposttest/include/
+src/blueskyposttest/lib/
+src/blueskyposttest/lib64/
+src/blueskyposttest/bin/
