@@ -4,37 +4,13 @@
 
 　BlueSkyのAPIで投稿する。
 
-<!--
-
-# デモ
-
-* [demo](https://ytyaru.github.io/Python.BlueSky.API.Post.20250804233742/)
-
-![img](https://github.com/ytyaru/Python.BlueSky.API.Post.20250804233742/blob/master/doc/0.png?raw=true)
-
-# 特徴
-
-* セールスポイント
-
--->
-
 # 開発環境
 
-* <time datetime="20250804233725
-">20250804233725
-</time>
+* <time datetime="20250804233725">20250804233725</time>
 * [Raspbierry Pi](https://ja.wikipedia.org/wiki/Raspberry_Pi) 4 Model B Rev 1.2
 * [Raspberry Pi OS](https://ja.wikipedia.org/wiki/Raspbian) buster 10.0 2020-08-20 <small>[setup](http://ytyaru.hatenablog.com/entry/2020/10/06/111111)</small>
 * bash 5.2.15(1)-release
-* 
-
-<!-- * environment: python2: コマンドが見つかりません
- -->
-
-```sh
-$ uname -a
-
-```
+* Python 3.11.2
 
 # インストール
 
@@ -74,13 +50,21 @@ pyenv install 3.10.5
 git clone https://github.com/ytyaru/Python.BlueSky.API.Post.20250804233742
 cd Python.BlueSky.API.Post.20250804233742/src
 ```
+```sh
+python -m venv blueskyposttest
+cd blueskyposttest/
+./bin/activate
+```
+```sh
+pip install -r requirements.txt
+```
 
 # 使い方
 
 ## 実行
 
 ```sh
-./run.py
+./main.py BlueSkyハンドル BlueSkyアプリパスワード
 ```
 
 ## 単体テスト
@@ -103,8 +87,10 @@ cd Python.BlueSky.API.Post.20250804233742/src
 
 * [![github](http://www.google.com/s2/favicons?domain=github.com)](https://github.com/ytyaru "github")
 * [![hatena](http://www.google.com/s2/favicons?domain=www.hatena.ne.jp)](http://ytyaru.hatenablog.com/ytyaru "hatena")
-* [![twitter](http://www.google.com/s2/favicons?domain=twitter.com)](https://twitter.com/ytyaru1 "twitter")
+* [![BlueSky](http://www.google.com/s2/favicons?domain=bsky.app)](https://bsky.app/profile/ytyaru.bsky.social "BlueSky")
 * [![mastodon](http://www.google.com/s2/favicons?domain=mstdn.jp)](https://mstdn.jp/web/accounts/233143 "mastdon")
+
+<!--* [![twitter](http://www.google.com/s2/favicons?domain=twitter.com)](https://twitter.com/ytyaru1 "twitter")-->
 
 # ライセンス
 
